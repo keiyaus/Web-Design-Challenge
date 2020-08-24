@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Visualization Dashboard</title>
-
+    <title>Visualizations Comparisons</title>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    
     <!-- Own CSS stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -49,57 +49,53 @@
 
     <!-- Start container -->
     <div class="container">
-        <br />
-        <br />
+        <br/>
+        <br/>
         <!-- First row -->
-        <section class="row">
-            <div class="col-md-7" id="home-section">
-                <br />
-                <h1>Summary: Latitude vs. X</h1>
+        <div class="row">
+            <div class="col-md-12" id="other-section">
+                <br/>
+                <h2>Comparison: Latitude vs. X</h2>
                 <hr />
                 <br />
                 <p>
-                    <img class="float-left" src="Resources/assets/images/Fig1.png" width=50%> The purpose of this
-                    project was to analyze how
-                    weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data
-                    from the OpenWeatherMap API to assemble a dataset on over 500 cities.<br /><br />
-                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
-                    latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This
-                    site provides the source data and visualizations created as part of the analysis, as well as
-                    explantions and descriptions of any trends and correlations witnessed.<br />
+                    Click any plot to get an in-depth analysis.
                 </p>
+                <br/>
             </div>
-            <div class="col-md-5">
-                <section id="home-section">
-                    <br />
-                    <h2>Visualizations</h2>
-                    <hr />
-                    <section class="row">
-                        <div class="col-sm-3 col-md-6">
-                            <a href="maxtemp.html"><img src="Resources/assets/images/Fig1.png" class="img-fluid" id="home-img"
-                                    alt="max temperature">
-                            </a>
-                        </div>
-                        <div class="col-sm-3 col-md-6">
-                            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid" id="home-img"
-                                    alt="humidity"></a>
-                        </div>
-
-                        <div class="col-sm-3 col-md-6">
-                            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid" id="home-img"
-                                    alt="cloudiness"></a>
-                        </div>
-
-                        <div class="col-sm-3 col-md-6">
-                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid" id="home-img"
-                                    alt="wind speed"></a>
-                        </div>
-                    </section>
-                </section>
+        </div>
+        
+        <!-- Second row -->
+        <div class="row" id="other-section">
+            <div class="col-md-6">
+                <h4 align="middle">vs. Max Temperature</h4>
+                <br/>
+                <center><a href="maxtemp.html"><img src="Resources/assets/images/Fig1.png" width="80%"  alt="max temperature">
+                </a></center>
+                <br/> 
             </div>
-
-        </section>
-    </div>
+            <div class="col-md-6">
+                <h4 align="middle">vs. Humidity</h4>
+                <br/>
+                <center><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="80%" alt="humidity">
+                </a></center>
+                <br/>
+            </div>
+            <div class="col-md-6">
+                <h4 align="middle">vs. Cloudiness</h4>
+                <br/>
+                <center><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="80%"  alt="cloudiness">
+                </a></center>
+                <br/>
+            </div>
+            <div class="col-md-6">
+                <h4 align="middle">vs. Wind Speed</h4>
+                <br/>
+                <center><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"width="80%"  alt="wind speed">
+                </a></center>
+                <br/>
+            </div>
+        </div>
     </div>
     <!-- End container -->
 
